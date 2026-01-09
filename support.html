@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Baby Dictionary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .contact-box h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box a {
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .contact-box a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .faq-answer {
+            color: #555;
+        }
+        
+        .store-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .store-link {
+            display: block;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+        
+        .store-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            
+            header h1 {
+                font-size: 1.5em;
+            }
+            
+            .store-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💬 Support</h1>
+            <p class="subtitle">Nous sommes là pour vous aider !</p>
+        </header>
+        
+        <div class="content">
+            <div class="contact-box">
+                <h2>Contactez-nous</h2>
+                <p>Une question ? Un problème ? Une suggestion ?</p>
+                <a href="mailto:support@babydictionary.app">support@babydictionary.app</a>
+                <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;">
+                    Nous répondons généralement sous 48h
+                </p>
+            </div>
+
+            <h2>📱 Télécharger l'application</h2>
+            <div class="store-links">
+                <a href="#" class="store-link">
+                    🍎 App Store<br>
+                    <small style="opacity: 0.7;">Bientôt disponible</small>
+                </a>
+                <a href="#" class="store-link">
+                    🤖 Google Play<br>
+                    <small style="opacity: 0.7;">Bientôt disponible</small>
+                </a>
+            </div>
+
+            <h2>❓ Questions fréquentes (FAQ)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Comment enregistrer le premier mot de mon enfant ?</div>
+                <div class="faq-answer">
+                    Appuyez sur le bouton "+" en haut à droite de l'écran d'accueil, tapez le mot, sélectionnez une catégorie, puis maintenez le bouton rouge pour enregistrer. Relâchez pour arrêter l'enregistrement.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Puis-je enregistrer plusieurs fois le même mot ?</div>
+                <div class="faq-answer">
+                    Oui ! C'est même l'une des fonctionnalités principales. Appuyez sur un mot existant, puis sur "Ajouter un nouvel enregistrement" pour capturer l'évolution de la prononciation au fil du temps.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Combien de mots puis-je enregistrer gratuitement ?</div>
+                <div class="faq-answer">
+                    La version gratuite vous permet d'enregistrer jusqu'à 30 mots. Vous pouvez enregistrer autant de versions que vous le souhaitez pour chaque mot. Pour un nombre illimité de mots, passez à la version Premium pour 12,99€ (paiement unique).
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Mes enregistrements sont-ils sauvegardés dans le cloud ?</div>
+                <div class="faq-answer">
+                    Non, tous vos enregistrements sont stockés localement sur votre appareil pour respecter votre vie privée. Nous vous recommandons d'utiliser la fonction d'export (version Premium) pour sauvegarder vos enregistrements régulièrement.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Que se passe-t-il si je désinstalle l'application ?</div>
+                <div class="faq-answer">
+                    ⚠️ Important : Si vous désinstallez l'application, toutes vos données (enregistrements, informations) seront définitivement perdues. Assurez-vous d'exporter vos données avant de désinstaller.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Comment restaurer mes achats sur un nouvel appareil ?</div>
+                <div class="faq-answer">
+                    Si vous avez acheté la version Premium et changez d'appareil, utilisez le bouton "Restaurer les achats" dans les paramètres de l'application. Vous devez utiliser le même compte Apple ID (iOS) ou Google Play (Android).
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Puis-je utiliser l'application pour plusieurs enfants ?</div>
+                <div class="faq-answer">
+                    Oui ! Vous pouvez créer plusieurs profils d'enfants dans l'application et enregistrer des mots pour chacun d'eux. Le compteur de 30 mots gratuits est partagé entre tous les enfants.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Puis-je obtenir un remboursement ?</div>
+                <div class="faq-answer">
+                    Les remboursements sont gérés par Apple (App Store) ou Google (Play Store). Contactez directement leur support pour toute demande de remboursement. Nous ne gérons pas les paiements directement.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">L'application fonctionne-t-elle hors ligne ?</div>
+                <div class="faq-answer">
+                    Oui, l'application fonctionne entièrement hors ligne. Vous n'avez besoin d'une connexion Internet que pour acheter la version Premium.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Comment améliorer la qualité des enregistrements ?</div>
+                <div class="faq-answer">
+                    Pour de meilleurs enregistrements :<br>
+                    • Enregistrez dans un endroit calme<br>
+                    • Tenez l'appareil près de l'enfant (mais pas trop près)<br>
+                    • Évitez les bruits de fond (télévision, radio, etc.)<br>
+                    • Assurez-vous que le microphone de votre appareil n'est pas obstrué
+                </div>
+            </div>
+
+            <h2>🐛 Signaler un bug</h2>
+            <p>
+                Vous avez rencontré un problème technique ? Envoyez-nous un email à <strong>support@babydictionary.app</strong> en précisant :
+            </p>
+            <ul style="margin-left: 25px; margin-top: 10px;">
+                <li>Le modèle de votre appareil (ex: iPhone 14, Samsung Galaxy S23)</li>
+                <li>La version de votre système (ex: iOS 17, Android 14)</li>
+                <li>Une description détaillée du problème</li>
+                <li>Des captures d'écran si possible</li>
+            </ul>
+
+            <h2>💡 Suggérer une fonctionnalité</h2>
+            <p>
+                Vous avez une idée pour améliorer Baby Dictionary ? Nous serions ravis de l'entendre ! Envoyez-nous vos suggestions à <strong>support@babydictionary.app</strong>.
+            </p>
+
+            <h2>📄 Informations légales</h2>
+            <ul style="margin-left: 25px; margin-top: 10px;">
+                <li><a href="privacy-policy.html" style="color: #667eea;">Politique de confidentialité</a></li>
+                <li><a href="terms-of-service.html" style="color: #667eea;">Conditions d'utilisation</a></li>
+            </ul>
+
+            <a href="index.html" class="back-link">← Retour à l'accueil</a>
+        </div>
+        
+        <footer>
+            <p>Baby Dictionary © 2025 - Tous droits réservés</p>
+            <p style="margin-top: 5px;">Version 1.0.0</p>
+        </footer>
+    </div>
+</body>
+</html>
